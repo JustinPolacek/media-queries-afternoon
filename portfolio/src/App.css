@@ -12,7 +12,7 @@ nav{
   width: 100%;
   margin: auto;
   padding: 10px;
-  background-color: black;
+  background-color: white;
 
   
 }
@@ -32,7 +32,7 @@ nav ul {
 li a{
   list-style: none;
   text-decoration: none;
-  color: grey;
+  color: silver;
 }
 .logo{
   flex: 2 2 40rem;
@@ -42,7 +42,7 @@ li a{
 }
 
 .hero{
-  background: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
   height: 90vh;
   background-position: center;
   display: flex;
@@ -81,7 +81,7 @@ li a{
 }
 
 h2{
-  color: grey;
+  color: silver;
   font-size: 6rem;
   font-weight: 500;
 
@@ -94,7 +94,7 @@ h1{
 }
 
 p{
-  color: grey;
+  color: white;
   font-size: 1.4rem;
   opacity: 0.8;
   font-weight: 100;
@@ -104,10 +104,21 @@ p{
 
 
 @media(max-width: 750px){
-  h2{ max-width: 750px;
-
+  h2{ 
+    font-size: 3.5rem;
+    
+    }
+    
+    }
+ 
+  
+  p{
+    font-size: 1rem;
   }
-}
+
+ 
+  
+
 
 
 
