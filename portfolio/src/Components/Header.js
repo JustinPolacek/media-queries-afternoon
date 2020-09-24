@@ -1,25 +1,41 @@
 import React, { Component } from 'react';
+import './Header.css';
 
+export default class Header extends Component {
+    constructor() {
+        super();
+        this.state = {
+            menu: false 
+        }
+    }
 
-class Header extends Component {
-    render(){
-        return(
+    slide = () => {
+        this.setState({ menu: !this.state.menu })
+    }
+
+    render() {
+        return (
             <div>
-                <header class ="main-head">
-        <nav>
-            <h1 class="logo">Start BootStrap</h1>
-            <ul>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
-               
-            </ul>
-        </nav>
-    </header>
-    
+                {/* Navbar */}
+                <nav className='navbar'>
+                    <h1 className='navbar-title'>Start Bootstrap</h1>
+                    <div className='navbar-icon' onClick={this.slide}>&#9776;</div>
+                    <div className='navbar-menu'>
+                        <a href='#'>Shop</a>
+                        <a href='#'>About</a>
+                        <a href='#'>Projects</a>
+                        
+                    </div>
+                </nav>
+
+                {/* Slide out menu */}
+                <div className={this.state.menu ? 'menu slide' : 'menu'}>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+
+                </div>
             </div>
         )
     }
 }
-
-export default Header;
