@@ -15,7 +15,8 @@ html{
 .navbar-title {
     color: #fff;
     margin-left: 75px;
-    font-size: 18px;
+    font-size: 21px;
+    cursor: pointer;
 }
 
 .navbar-menu {
@@ -54,6 +55,7 @@ html{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
 }
 
 .slide {
@@ -83,5 +85,6 @@ html{
 @media(max-width: 750px){
     .navbar-title{
         font-size: 25px;
+        
     }
 }

@@ -6,7 +6,7 @@ class Hero extends Component{
             <section className="hero">
             <h2>G R A Y S C A L E</h2>
             <p>A free, responsive, one page Bootstrap theme<br/> created by Start Bootstrap.</p>
-              <button class="button">Get Started</button>
+              <button class="button">GET STARTED</button>
             
              </section>
         )

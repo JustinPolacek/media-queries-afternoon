@@ -45,6 +45,8 @@ li a{
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
   height: 90vh;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +59,8 @@ li a{
 }
 
 .button{
-
+  
+  letter-spacing: 1.5px;;
   background-color: #64a19d;
   padding-top: 1.25rem;
   padding-right: 2rem;
@@ -66,8 +69,8 @@ li a{
   color: white;
   cursor: pointer;
   border: none;
-  font-size: 1rem;
-  border-radius: 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
   transition-duration: 2s;
   border-style: none;
   
@@ -77,7 +80,7 @@ li a{
   background-color:#64a19d;
   color: black;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 h2{
@@ -95,9 +98,9 @@ h1{
 
 p{
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   opacity: 0.8;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 15px;
 }
 
@@ -105,17 +108,16 @@ p{
 
 @media(max-width: 750px){
   h2{ 
-    font-size: 3.5rem;
-    
+        font-size: 3.5rem;
     }
     
     }
- 
   
-  p{
-    font-size: 1rem;
-  }
-
+    @media(max-width: 750px){
+      p{
+        font-size: 1.2rem;
+      }
+    }
  
   
 
